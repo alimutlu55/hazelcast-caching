@@ -31,4 +31,10 @@ public class UserController {
     public Map<Long, User> getUserListFromCache () {
         return userManager.getList();
     }
+
+    @GetMapping("/user")
+    public Map<Long, User> deneme () {
+        return userManager.getList();
+    }
+
 }
